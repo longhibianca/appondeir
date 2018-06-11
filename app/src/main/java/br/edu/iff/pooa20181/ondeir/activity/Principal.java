@@ -1,7 +1,9 @@
-package br.edu.iff.pooa20181.ondeir;
+package br.edu.iff.pooa20181.ondeir.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import br.edu.iff.pooa20181.ondeir.R;
 
 public class Principal extends AppCompatActivity {
 
