@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">OndeIr</string>
+    <string name="title_activity_lista_evento">ListaEvento</string>
 </resources>

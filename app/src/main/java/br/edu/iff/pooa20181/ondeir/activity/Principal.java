@@ -12,7 +12,7 @@ import br.edu.iff.pooa20181.ondeir.R;
 
 public class Principal extends AppCompatActivity implements AdapterView.OnItemClickListener{
 
-    private String[] activities = {"ListaEventoActivity"};
+    private String[] activities = {"ListaEvento"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -37,12 +37,14 @@ public class EventoAdapter extends RecyclerView.Adapter {
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder viewHolder, int position) {
 
+        Log.i("--SIZE----XXXXXXXXX--", String.valueOf(this.eventos.size()));
+
         EventoViewHolder eventoHolder = (EventoViewHolder) viewHolder;
 
-        Evento evento  = eventos.get(position) ;
+        Evento evento  = this.eventos.get(position) ;
 
         eventoHolder.nomeEvento.setText(evento.getNome());
-        eventoHolder.dataEvento.setText(evento.getData().toString());
+        eventoHolder.dataEvento.setText("aaaa");
         eventoHolder.enderecoEvento.setText(evento.getEndereco());
 
         Log.i("------XXXXXXXXX--", evento.getNome());
@@ -51,7 +53,7 @@ public class EventoAdapter extends RecyclerView.Adapter {
 
     @Override
     public int getItemCount() {
-        return this.eventos.size();
+        return eventos.size();
     }
 
     public class EventoViewHolder extends RecyclerView.ViewHolder {
