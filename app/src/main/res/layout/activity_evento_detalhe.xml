@@ -112,4 +112,34 @@
         android:inputType="numberDecimal"
         app:layout_constraintStart_toEndOf="@+id/etLatitude"
         app:layout_constraintTop_toBottomOf="@+id/etData" />
+
+    <Button
+        android:id="@+id/bt_salvar_evento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:text="Salvar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLatitude" />
+
+    <Button
+        android:id="@+id/bt_alterar_evento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Alterar"
+        app:layout_constraintStart_toEndOf="@+id/bt_salvar_evento"
+        app:layout_constraintTop_toBottomOf="@+id/etLatitude" />
+
+    <Button
+        android:id="@+id/bt_deletar_evento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Deletar"
+        app:layout_constraintStart_toEndOf="@+id/bt_alterar_evento"
+        app:layout_constraintTop_toBottomOf="@+id/etLatitude" />
 </android.support.constraint.ConstraintLayout>
