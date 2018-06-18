@@ -18,6 +18,14 @@ public class Evento {
     public Evento() {
     }
 
+
+    public Evento(int id, String nome, Date data, int capacidade) {
+        this.id = id;
+        this.nome = nome;
+        this.data = data;
+        this.capacidade = capacidade;
+    }
+
     public Evento(int id, String nome, String rua, String numero, String bairro, String cidade, float longitude, float latitude, Date data, int capacidade) {
         this.id = id;
         this.nome = nome;
@@ -26,6 +34,7 @@ public class Evento {
         this.bairro = bairro;
         this.cidade = cidade;
         this.longitude = longitude;
+
         this.latitude = latitude;
         this.data = data;
         this.capacidade = capacidade;

@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import br.edu.iff.pooa20181.ondeir.R;
@@ -50,7 +51,7 @@ public class ListaEvento extends AppCompatActivity implements ClickRecyclerViewL
          int i =0;
          for(i=0;i<20;i++){
              String iv = String.valueOf(i);
-             Evento evento = new Evento(i,"nome -> ".concat(iv),"endereco".concat(iv),null);
+             Evento evento = new Evento(i,"nome -> ".concat(iv),new Date(System.currentTimeMillis()),i);
              eventos.add(evento);
              Log.i("------XXXXXXXXX--", evento.getNome());
          }
