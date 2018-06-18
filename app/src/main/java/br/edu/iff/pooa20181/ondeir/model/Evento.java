@@ -1,9 +1,14 @@
 package br.edu.iff.pooa20181.ondeir.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Evento {
+import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
 
+public class Evento extends RealmObject implements Serializable {
+
+    @PrimaryKey
     private int id;
     private String nome;
     private String rua;
