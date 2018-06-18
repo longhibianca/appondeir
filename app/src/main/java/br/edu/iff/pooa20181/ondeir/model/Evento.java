@@ -8,6 +8,7 @@ import io.realm.annotations.PrimaryKey;
 
 public class Evento extends RealmObject implements Serializable {
 
+    //define os atributos e a anotação de qual deles é pk da tabela
     @PrimaryKey
     private int id;
     private String nome;
@@ -20,6 +21,7 @@ public class Evento extends RealmObject implements Serializable {
     private Date data;
     private int capacidade;
 
+    //método construtor vazio que é obrigatório
     public Evento() {
     }
 

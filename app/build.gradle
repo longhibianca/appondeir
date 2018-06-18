@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+//define o plugin do realm na aplicação
 apply plugin: 'realm-android'
 
 android {
