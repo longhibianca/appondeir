@@ -9,8 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 import br.edu.iff.pooa20181.ondeir.R;
@@ -44,12 +43,11 @@ public class EventoAdapter extends RecyclerView.Adapter {
         EventoViewHolder eventoHolder = (EventoViewHolder) viewHolder;
 
         Evento evento  = this.eventos.get(position) ;
-        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        LocalDate data = LocalDate.parse("23/11/2015", formato);
-        System.out.println(data);
+        SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
+
 
         eventoHolder.nomeEvento.setText(evento.getNome());
-        eventoHolder.dataEvento.setText(formato.format(data));
+        eventoHolder.dataEvento.setText(formato.format(evento.getData()));
         eventoHolder.capacidadeEvento.setText(String.valueOf(evento.getCapacidade()));
 
 

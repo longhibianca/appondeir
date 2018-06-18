@@ -1,5 +1,6 @@
 package br.edu.iff.pooa20181.ondeir.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -61,5 +62,11 @@ public class ListaEvento extends AppCompatActivity implements ClickRecyclerViewL
 
     @Override
     public void onClick(Object object) {
+        Evento evento = (Evento) object;
+        Intent intent = new Intent(ListaEvento.this,EventoDetalhe.class);
+        intent.putExtra("nome",evento.getNome());
+        intent.putExtra("data",evento.getData());
+        intent.putExtra("capacidade",evento.getCapacidade());
+        startActivity(intent);
     }
 }

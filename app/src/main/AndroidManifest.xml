@@ -19,7 +19,8 @@
         <activity
             android:name=".activity.ListaEvento"
             android:label="@string/title_activity_lista_evento"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.EventoDetalhe"></activity>
     </application>
 
 </manifest>
